@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora Gráfica</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main class="container">
+      <div class="wrapper">
+        <header class="container-header">
+          <h1>Calculadora Gráfica</h1>
+          <p>
+            Calcule Numeração de Blocos notificação de Receita <br />
+            Calcule Quantidade de papel para corte no formato 1
+          </p>
+        </header>
+        <section class="container-home">
+          <div class="content-block-blue hidden">
+            <h4>Bloco Azul - Notificação de Receita</h4>
+            <input
+              id="numberBlock"
+              type="number"
+              name="numberBlock"
+              placeholder="Quantidade de Blocos"
+            />
+            <br />
+            <input
+              id="numberSheetBlock"
+              type="number"
+              name="numberSheetBlock"
+              placeholder="Quantidade de Folhas no Bloco"
+            />
+            <br />
+            <input
+              id="startingNumber"
+              type="number"
+              name="startingNumber"
+              placeholder="Número Inicial"
+            />
+            <br />
+            <input
+              id="finalNumber"
+              type="number"
+              name="finalNumber"
+              placeholder="Número Final"
+            />
+
+            <button onclick="calcBlockBlue()">Calcular</button>
+            <div id="blueBlockResult"></div>
+          </div>
+          <div class="content-block-6in1">
+            <h4>Corte do papel no Formato 1</h4>
+
+            <input
+              id="amountPieces"
+              type="number"
+              name="amountPieces"
+              placeholder="Quantidade de Pedaços"
+            />
+            <br />
+            <input
+              id="machineFormat"
+              type="number"
+              name="machineFormat"
+              placeholder="Formato da Máquina"
+            />
+            <br />
+            <input
+              id="cutSheetQuantity"
+              type="number"
+              name="cutSheetQuantity"
+              placeholder="Quantidade Impressa na Folha"
+            />
+            <br />
+            <button onclick="calcSheetCut()">Calcular</button>
+            <div id="sheetCutCalculationResult" class="content-result"></div>
+          </div>
+        </section>
+        <div class="container-buttons">
+          <div class="content-btn-up">
+            <a href="#" class="link">
+              <div class="b1">
+                <span>BLOCO AZUL</span>
+              </div>
+            </a>
+            <a href="#" class="link">
+              <div class="b2">
+                <span>CORTE F1</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- <footer class="rodape wrapper">
+      <div class="social-links">
+        <ul>
+          <li>
+            <a href="https://github.com/WellingtonSilva12" target="_blank"
+              ><i class="bx bxl-github"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/nwellingtonsilva/"
+              target="_blank"
+              ><i class="bx bxl-linkedin-square"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.behance.net/wellingtonsilvaa" target="_blank"
+              ><i class="bx bxl-behance"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/wellington.costaa_/"
+              target="_blank"
+              ><i class="bx bxl-instagram-alt"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+      Criado por <a href="#">Wellington Silva</a> | &copy 2021 All Rights
+      Reserved
+    </footer> -->
+    <script src="script.js"></script>
+  </body>
+</html>
